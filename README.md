@@ -7,14 +7,14 @@
 
 ### Стек технологий:
 
-* #### Django REST
-* #### Python 3.9
-* #### Docker
-* #### Nginx
-* #### PostgreSQL
-* #### GitHub Actions
-* #### JS
-* #### Node.js
+* ##### Python
+* ##### Django REST
+* ##### Docker
+* ##### Nginx
+* ##### PostgreSQL
+* ##### GitHub Actions
+* ##### JS
+* ##### Node.js
 
 
 ### Как запустить проект: 
@@ -36,7 +36,7 @@ sudo apt-get install docker-compose-plugin
 cd taski-docker
 sudo nano .env
 ```
-##### Загрузить образы контейнеров из DockerHub:
+##### Загрузить образы из DockerHub:
 ```
 sudo docker compose -f docker-compose.production.yml pull
 ```
@@ -44,7 +44,7 @@ sudo docker compose -f docker-compose.production.yml pull
 ```
 sudo docker compose -f docker-compose.production.yml down
 ```
-##### Запустить все контейнеры в фоновом режиме: 
+##### Запустить контейнеры из образов в фоновом режиме: 
 ```
 sudo docker compose -f docker-compose.production.yml up -d
 ```
@@ -57,7 +57,7 @@ sudo docker compose -f docker-compose.production.yml exec backend python manage.
 sudo docker compose -f docker-compose.production.yml exec backend python manage.py collectstatic
 sudo docker compose -f docker-compose.production.yml exec backend cp -r /app/collect_static/. /backend_static/static/
 ```
-##### Создать суперпользователя (указывать логин, e-mail, пароль):
+##### Создать суперпользователя (указать логин, e-mail, пароль):
 ``` 
 sudo docker compose -f docker-compose.production.yml exec backend python manage.py createsuperuser 
 ```
