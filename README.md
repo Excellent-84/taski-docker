@@ -50,6 +50,8 @@ sudo ufw enable
 ##### Открыть файл Nginx и поменять настройки, сохранить и закрыть:
 ```
 sudo nano /etc/nginx/sites-enabled/default
+```
+```
 server {
     listen 80;
     server_name your_domain_name.com;
